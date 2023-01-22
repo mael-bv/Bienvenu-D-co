@@ -1,0 +1,496 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body { background:rgb(30,30,40); }
+form { max-width:420px; margin:50px auto; }
+
+body {
+    overflow: hidden;
+}
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #262B50;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #262B50; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#262B50;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#CC4949; }è
+/* Map */
+.titre{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    background-color: #FFD22A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 51vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.contact{
+   /*  font-weight: bold */
+    font-size: 40px;
+    color: white;
+}
+.contact::after{
+    content: "";
+    animation: cursor 1s infinite;
+    width: 3px;
+    height: 5%;
+    background-color: #dadada;
+    position: absolute;
+
+}
+@keyframes cursor {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+#typed{
+    color: red;
+    font-size: 55px;
+    font-weight: bol
+}
+/* --------LOCA---------- */
+.loca{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    background-color: #eeeeee;
+}
+.localisation{
+    width: 75%;
+    height: 100%;
+}
+.titre-loca{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+.contenu-loca{
+    width: 100%;
+    height: 80%;
+    display: flex;
+}
+.titre-loca p{
+    font-size: 35px;
+    font-weight: bold;
+    color: #262B50;;
+}
+.info-loca{
+    width: 30%;
+    height: 100%;
+}
+.photo-loca{
+    width: 70%;
+    height: 100%;
+    
+}
+.logo-loca{
+    width: 45%;
+    height: 35%;
+    
+}
+.logo-loca img{
+    width: 100%;
+    height: 100%;
+}
+.adress-loca{
+    width: 76%;
+    height: 40%;
+}
+.adress1,.tel,.mail{
+    width: 100%;
+    height: 32%;
+}
+
+.adress1 p{
+    color:#262B50 ;
+}
+.tel p{
+    color:#262B50 ;
+}
+.mail p {
+    color:#262B50
+}
+.tel span{
+    color:#262B50 ;
+    font-weight: bold;
+    font-size: 20px;
+}
+.mail span{
+    color:#262B50 ;
+    font-weight: bold;
+    font-size: 20px;
+}
+#map{
+    width: 100%;
+    height: 80%;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 0.6s ease-in-out;
+    opacity: 0.6s ease-in-out;
+    text-decoration: overline;
+}
+
+.check {
+    cursor: pointer;
+}
+
+.checkLabel{
+    cursor: pointer;
+}
+
+.checkLabel:hover{
+    text-decoration: underline;
+}
+.checkLabel a {
+    text-decoration: none;
+    color : red;
+}
+
+
+/* RESPONSIVE */
+
+  @media screen and (max-width: 1532px){
+      .ensemble{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+     .titreF{
+         height: 14%;
+     }
+     .titreF, .ensembleP, .info, .mess, .acceptation {
+        width: 100%;
+        height: 18%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+     }
+     .champ{
+        
+            width: 59%;
+            height: 45%;
+            background-color: #eeeeee;
+            border: none;
+            border-radius: 0px;
+        
+     }
+     .formulaire{
+         height: 85vh;
+     }
+     
+    
+
+  }
+
+  @media screen and (max-width: 1522px){
+    .item{
+        font-size: 12px;
+    }
+    .dropdown button {
+        font-size: 12px;
+    }
+  }
+
+
+
+  @media screen and (max-width: 1358px){
+    footer{
+        height: 110vh;
+    }
+    .b{
+        font-size: 12px;
+    }
+    .a{
+        height: 45%;
+    }
+    .element {
+        width: 75%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .adresse-foot,.num-foot,.mail-foot{
+        display: flex;
+    justify-content: center;
+    }
+    .num-foot p{
+        display: flex;
+    flex-direction: column;
+    }
+    .num-foot span{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .mail-foot p{
+        display: flex;
+    flex-direction: column;
+    }
+    .mail-foot span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+  }
+
+  .condition {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .condition label {
+    color: red;
+    margin-left: 12px;
+  }
+
+  @media screen and (max-width: 1358px) {
+    .item{
+        display: none;
+    }
+    .dropdown2{
+        display: flex;
+        flex-direction: column;
+        position :absolute;
+        
+}
+.navbar
+{
+    position: relative;
+    position: fixed;
+}
+.drop-plus{
+    display: block;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+}
+.navbar-items{
+    width: 0%;
+}
+.drop-plus img{
+    width: 35%;
+}
+.navbar-image{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.navbar-image img{
+    width: 25%;
+    border-radius: 0 0 0 15px;
+    cursor: pointer;
+}
+.dropDrop{
+    display: block;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+.adress-loca{
+    width: 100%;
+}
+.adress1, .tel, .mail {
+    display: flex;
+    justify-content: center;
+}
+.mail{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.mail span {
+    display: flex;
+justify-content: center;
+}
+  }
+  
+  @media screen and (max-width: 1188px){
+      .loca{
+        height: 100vh;
+      }
+      .contenu-loca{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .titre-loca{
+        display: flex;
+        justify-content: center;
+      }
+      .logo-loca{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+      
+    }
+    .logo-loca img{
+        width: 50%;
+    }
+    .adress1 {
+        margin-bottom: 10px;
+    }
+    
+   
+    
+    .titre{
+       /*  background-image: url(../image/contact1.png); */
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+    }
+      
+  }
+  @media screen and (max-width: 1032px){
+      .adress-foot,.mention {
+        width: 50%;
+      }
+      .logo-elem {
+        width: 85%;
+        height: 60%;
+    }
+  }
+ 
+  @media screen and (max-width: 784px){
+    .champ{
+        width: 100%;
+    }
+    .logo-loca img {
+        width: 75%;
+    }
+    .photo-loca {
+        width: 100%;
+        height: 100%;
+    }
+    .certifi{
+        width: 45%;
+    }
+    .btn-top{
+        font-size: 27px;
+        width: 65px;
+        height: 65px;
+    }
+    .message{
+        width: 100%;
+    }
+  }
+  @media screen and (max-width: 696px){
+    .info-loca {
+        width: 91%;
+        height: 100%;
+    }
+    .logo-loca img {
+        width: 35%;
+    }
+  }
+  @media screen and (max-width: 486px){
+    .drop-plus {
+        display: block;
+        width: 100%;
+        height: 90%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .dropDrop {
+        
+        width: 50%;
+        
+    }
+    .navbar-image img {
+        width: 47%;
+    }
+    .logo-foot{
+        width: 50%;
+    }
+    .logo-elem {
+        width: 100%;
+        height: 60%;
+    }
+    .title-foot p{
+        font-size: 17px;
+    }
+  }
+  
+  @media screen and (max-width: 414px){
+    .title-foot p{
+        font-size: 15px;
+    }
+    .certifi {
+        width: 65%;
+    }
+    .drop-plus img {
+        width: 36%;
+    }
+    .dropDrop {
+        width: 50%;
+    }
+    .navbar-image {
+        width: 50%;
+       
+    }
+    .adress-foot,.mention{
+        width: 75%;
+    }
+    .localisation {
+        width: 95%;
+        height: 100%;
+    }
+  }
+  

@@ -1,0 +1,632 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+html,body{
+    width:100%;
+    overflow-x:hidden;
+    }
+*{
+    margin: 0;
+    padding: 0;
+}
+::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ----ZONE---- */
+.zone{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: url(../image/eiffel.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.vide,.info{
+    width: 50%;
+    height: 100%;
+}
+.info{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.information-zone{
+    width: 75%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     background-color: rgba(255,0,0,0.5);
+     opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 0.6s ease-in-out;
+    opacity: 0.6s ease-in-out;
+}
+.information-zone p{
+    font-weight: bold;
+    color: white;
+    font-size: 23px;
+}
+/* ----EXPLICATION---- */
+.explication{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    background-image: url(../image/info3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.info-exp,.photo{
+    width: 50%;
+    height: 100%;
+}
+.info-exp{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.photo{
+    display: flex;
+    align-items: center;
+}
+.info-plus{
+    width: 60%;
+    height: 45%;
+}
+.caroussel{
+    width: 70%;
+    height: 55%;
+    position: relative;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 0.6s ease-in-out;
+    opacity: 0.6s ease-in-out;
+}
+.slideshow-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    /* display: none; */
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    border-radius: 15px;
+}
+/* .slideshow-img:nth-child(1){
+    display: block;
+} */
+.information-exp{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+.list-exp{
+width: 100%;
+height: 80%;
+color: white;
+}
+.list-exp ul{
+    padding-left: 20px;
+}
+.list-exp li {
+    margin-bottom: 5px;
+}
+/* ----FOOTER----- */
+footer{
+    background-color: #262B50;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.element{
+    width: 75%;
+    height: 70%;
+    display: flex;
+
+}
+.logo-foot,.adress-foot,.certifi,.mention{
+    width: 25%;
+    height: 100%;
+}
+.logo-elem{
+    width: 50%;
+    height: 50%;
+}
+.logo-foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-foot img{
+    width: 100%;
+    height: 100%;
+}
+.title-foot{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title-foot p {
+    color: #FFD22A;
+    font-weight: bold;
+    font-size: 20px;
+}
+.loca-foot {
+    width: 100%;
+    height: 80%;
+}
+.localisation-foot{
+    width: 100%;
+    height: 65%;
+}
+.adresse-foot,.num-foot,.mail-foot{
+    width: 100%;
+    height: 32%;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+}
+.num-foot span{
+    font-weight: bold;
+    font-size: 18px;
+}
+.mail-foot span{
+    font-weight: bold;
+    font-size: 18px;
+}
+.certification{
+    width: 100%;
+    height: 52%;
+    display: flex;
+    justify-content: space-between;
+}
+.certi1,.certi2,.certi3{
+    width: 31%;
+    height: 100%;
+}
+.certification img {
+    width: 100%;
+    height: 100%;
+}
+.legale{
+    width: 100%;
+    height: 20%;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.legale li{
+list-style: none;
+text-decoration: none;
+color: white;  
+}
+.legale li:before {
+    content:'\2022';
+    display: block;
+    position: relative;
+    max-width: 0px;
+    max-height: 0px;
+    left: -10px;
+    top: -0px;
+    color: red;
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 1814px){
+    .information-zone p {
+    
+        font-size: 19px;
+    }
+  }
+  @media screen and (max-width: 1484px){
+    .information-zone p {
+        font-size: 17px;
+    }
+  }
+  @media screen and (max-width: 1332px){
+    .vide{
+        width: 0%;
+
+    }
+    .info{
+        width: 100%;
+    }
+    .information-zone {
+        width: 55%;
+    }
+}
+  
+@media screen and (max-width: 1522px){
+  .item{
+      font-size: 12px;
+  }
+  .dropdown button {
+      font-size: 12px;
+  }
+}
+
+
+
+@media screen and (max-width: 1358px){
+  footer{
+      height: 110vh;
+  }
+  .b{
+      font-size: 12px;
+  }
+  .a{
+      height: 45%;
+  }
+  .element {
+      width: 75%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .adresse-foot,.num-foot,.mail-foot{
+      display: flex;
+  justify-content: center;
+  }
+  .num-foot p{
+      display: flex;
+  flex-direction: column;
+  }
+  .num-foot span{
+      display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .mail-foot p{
+      display: flex;
+  flex-direction: column;
+  }
+  .mail-foot span{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+}
+
+
+@media screen and (max-width: 1358px) {
+  .item{
+      display: none;
+  }
+  .dropdown2{
+      display: flex;
+      flex-direction: column;
+      position :absolute;
+      
+}
+.navbar
+{
+  position: relative;
+  position: fixed;
+}
+.drop-plus{
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+justify-content: center;
+}
+.navbar-items{
+  width: 0%;
+}
+.drop-plus img{
+  width: 35%;
+}
+.navbar-image{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.navbar-image img{
+  width: 25%;
+  border-radius: 0 0 0 15px;
+}
+.dropDrop{
+  display: block;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+}
+
+
+@media screen and (max-width: 1286px){
+    .explication {
+        width: 100%;
+        height: 95vh;
+        display: flex;
+        background-image: url(../image/info3.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .info-exp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .information-exp {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        font-weight: bold;
+        color: white;
+    }
+    .list-exp{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .list-exp ul{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-top: 78px;
+    }
+    .list-exp li{
+        list-style: none;
+    }
+    .photo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .caroussel {
+        width: 70%;
+        height: 97%;
+    }
+    .info-plus{
+        width: 75%;
+    }
+    .caroussel {
+        width: 98%;
+        height: 97%;
+    }
+    
+    .info-exp, .photo {
+        width: 55%;
+        height: 45%;
+    }
+}
+  
+  
+@media screen and (max-width: 1032px){
+    .adress-foot,.mention {
+      width: 50%;
+    }
+    .logo-elem {
+      width: 85%;
+      height: 60%;
+  }
+}
+@media screen and (max-width: 976px){
+    .info-exp {
+        width: 71%;
+    }
+    .information-zone p {
+        font-size: 15px;
+    }
+}
+/* @media screen and (max-width: 870px){
+  .navbar-image {
+      width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  }
+  .navbar-image img {
+      width: 60%;
+      border-radius: 0 0 0 15px;
+  }
+} */
+@media screen and (max-width: 798px){
+   
+    .information-zone p {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 784px){
+  
+  .certifi{
+      width: 45%;
+  }
+  .btn-top{
+      font-size: 27px;
+      width: 65px;
+      height: 65px;
+  }
+  .information-zone p {
+    font-size: 11px;
+}
+.information-zone {
+    width: 45%;
+    height: 10%;
+}
+}
+@media screen and (max-width: 754px){
+    .info-exp {
+        width: 94%;
+    }
+}
+@media screen and (max-width: 714px){
+    .information-zone {
+        width: 40%;
+        height: 10%;
+    }
+    .information-zone p {
+        font-size: 9px;
+    }
+    .photo {
+        width: 75%;
+        height: 45%;
+    }
+    
+}
+@media screen and (max-width: 650px){
+    .information-zone {
+        width: 70%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .information-zone p {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 584px){
+    .information-zone p {
+        font-size: 12px;
+    }
+    .info-plus {
+        width: 85%;
+    }
+}
+@media screen and (max-width: 504px){
+    /* .drop-plus {
+        display: block;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .dropDrop {
+        
+        width: 25%;
+        
+    }
+    .navbar-image img {
+        width: 80%;
+    } */
+    .logo-foot{
+        width: 50%;
+    }
+    .logo-elem {
+        width: 100%;
+        height: 60%;
+    }
+    .title-foot p{
+        font-size: 17px;
+    }
+    .information-zone p {
+        font-size: 10px;
+    }
+    .info-plus {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 486px){
+  .drop-plus {
+      display: block;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+  }
+  .dropDrop {
+      
+      width: 50%;
+      
+  }
+  .navbar-image img {
+      width: 47%;
+  }
+  .logo-foot{
+      width: 50%;
+  }
+  .logo-elem {
+      width: 100%;
+      height: 60%;
+  }
+  .title-foot p{
+      font-size: 17px;
+  }
+}
+@media screen and (max-width: 424px){
+    .info-exp {
+        width: 100%;
+    }
+    .photo {
+        width: 90%;
+        height: 45%;
+    }
+    .information-zone {
+        width: 98%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 414px){
+  .title-foot p{
+      font-size: 15px;
+  }
+  .certifi {
+      width: 65%;
+  }
+  .drop-plus img {
+      width: 36%;
+  }
+  .dropDrop {
+      width: 50%;
+  }
+  .navbar-image {
+      width: 50%;
+     
+  }
+  .adress-foot,.mention{
+      width: 50%;
+  }
+  .localisation {
+      width: 95%;
+      height: 100%;
+  }
+}
+
+@media screen and (max-width: 402px){
+    .list-exp{
+        font-size: 12px;
+    }
+    .photo {
+        width: 90%;
+        height: 40%;
+    }
+}

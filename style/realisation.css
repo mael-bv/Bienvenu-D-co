@@ -1,0 +1,495 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(38,43,80,0.7);
+    overflow: hidden;
+}
+
+
+/* --------realisation------- */
+
+.titre-rea{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.trait{
+    width: 5px;
+    margin: calc(2vw + 10px) auto;
+    background-color: white;
+    height: clamp(125px, 10vw, 250px);
+}
+.image-container{
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    opacity: 1;
+
+}
+.img-s{
+    width: 100%;
+    height: 100%;
+   /*  display: none; */
+}
+.img-s img{
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.2s ease-in-out;
+    opacity: 0;
+}
+h1{
+    font-size: clamp(30px, 7vw , 90px);
+    color: white;
+    text-transform: uppercase;
+}
+span{
+    font-weight: 500;
+    color: white;
+}
+
+.img-appa{
+    width: 49%;
+    height: 60vh;
+    border: 1px solid black;
+    position: fixed;
+    top: 225px;
+    z-index: 999999;
+    display: flex;
+    justify-content: flex-end;
+    display: none;
+    animation: opac 0.5s linear ;
+}
+@keyframes opac {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.img-appa img{
+    width: 100%;
+    height: 100%;
+}
+.close{
+    position: absolute;
+    font-size: 45px;
+    right: 0;
+    color: white;
+    
+}
+/* ----FOOTER----- */
+footer{
+    background-color: #262B50;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.element{
+    width: 75%;
+    height: 70%;
+    display: flex;
+
+}
+.logo-foot,.adress-foot,.certifi,.mention{
+    width: 25%;
+    height: 100%;
+}
+.logo-elem{
+    width: 50%;
+    height: 50%;
+}
+.logo-foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-foot img{
+    width: 100%;
+    height: 100%;
+}
+.title-foot{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title-foot p {
+    color: #FFD22A;
+    font-weight: bold;
+    font-size: 20px;
+}
+.loca-foot {
+    width: 100%;
+    height: 90%;
+}
+.localisation-foot{
+    width: 100%;
+    height: 65%;
+}
+.adresse-foot,.num-foot,.mail-foot{
+    width: 100%;
+    height: 32%;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+}
+.num-foot span{
+    font-weight: bold;
+    font-size: 18px;
+}
+.mail-foot span{
+    font-weight: bold;
+    font-size: 18px;
+}
+.certification{
+    width: 100%;
+    height: 52%;
+    display: flex;
+    justify-content: space-between;
+}
+.certi1,.certi2,.certi3{
+    width: 31%;
+    height: 100%;
+}
+.certification img {
+    width: 100%;
+    height: 100%;
+}
+.legale{
+    width: 100%;
+    height: 20%;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.legale li{
+list-style: none;  
+text-decoration: none;
+color: white;
+}
+.legale li:before {
+    content:'\2022';
+    display: block;
+    position: relative;
+    max-width: 0px;
+    max-height: 0px;
+    left: -10px;
+    top: -0px;
+    color: red;
+    font-size: 20px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1522px){
+    .item{
+        font-size: 12px;
+    }
+    .dropdown button {
+        font-size: 12px;
+    }
+  }
+  
+  
+  
+  @media screen and (max-width: 1358px){
+    footer{
+        height: 110vh;
+    }
+    .b{
+        font-size: 12px;
+    }
+    .a{
+        height: 45%;
+    }
+    .element {
+        width: 75%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .adresse-foot,.num-foot,.mail-foot{
+        display: flex;
+    justify-content: center;
+    }
+    .num-foot p{
+        display: flex;
+    flex-direction: column;
+    }
+    .num-foot span{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .mail-foot p{
+        display: flex;
+    flex-direction: column;
+    }
+    .mail-foot span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  
+  }
+  
+  
+  @media screen and (max-width: 1358px) {
+    .item{
+        display: none;
+    }
+    .dropdown2{
+        display: flex;
+        flex-direction: column;
+        position :absolute;
+        
+  }
+  .navbar
+  {
+    position: relative;
+    position: fixed;
+  }
+  .drop-plus{
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .navbar-items{
+    width: 0%;
+  }
+  .drop-plus img{
+    width: 35%;
+  }
+  .navbar-image{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .navbar-image img{
+    width: 25%;
+    border-radius: 0 0 0 15px;
+    cursor: pointer;
+  }
+  .dropDrop{
+    display: block;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  }
+  
+  
+  
+  @media screen and (max-width: 1000px){
+    .img-appa {
+        width: 49%;
+        height: 53vh;
+        top: 270px;
+    }
+  }
+    
+    
+  @media screen and (max-width: 1032px){
+      .adress-foot,.mention {
+        width: 50%;
+      }
+      .logo-elem {
+        width: 85%;
+        height: 60%;
+    }
+  
+}
+  
+  
+  
+  @media screen and (max-width: 870px){
+   /*  .navbar-image {
+        width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    }
+    .navbar-image img {
+        width: 60%;
+        border-radius: 0 0 0 15px;
+    } */
+    .img-appa {
+        width: 60%;
+        height: 53vh;
+        top: 270px;
+    }
+  }
+  
+  @media screen and (max-width: 784px){
+    
+    
+    .btn-top{
+        font-size: 27px;
+        width: 65px;
+        height: 65px;
+    }
+    .img-appa {
+        width: 70%;
+        height: 53vh;
+        top: 270px;
+    }
+   
+    
+  }
+  
+ 
+  @media screen and (max-width: 600px){
+    .img-appa {
+        width: 85%;
+        height: 45vh;
+        top: 326px;
+    }
+    .image-container {
+        display: grid;
+        width: 80%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        opacity: 1;
+    }
+  }
+  
+ 
+  
+  @media screen and (max-width: 504px){
+      .drop-plus {
+          display: block;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: flex-start;
+      }
+      .dropDrop {
+          
+          width: 25%;
+          
+      }
+      .navbar-image img {
+          width: 80%;
+      }
+      .logo-foot{
+          width: 50%;
+      }
+      .logo-elem {
+          width: 100%;
+          height: 60%;
+      }
+      .title-foot p{
+          font-size: 17px;
+      }
+      .elem1 p{
+          font-size: 12px;
+      }
+      .btn1,.btn2,.btn3{
+          width: 25%;
+      }
+     
+  }
+  
+  @media screen and (max-width: 486px){
+    .drop-plus {
+        display: block;
+        width: 100%;
+        height: 90%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .dropDrop {
+        
+        width: 50%;
+        
+    }
+    .navbar-image img {
+        width: 47%;
+    }
+    .logo-foot{
+        width: 50%;
+    }
+    .logo-elem {
+        width: 100%;
+        height: 60%;
+    }
+    .title-foot p{
+        font-size: 17px;
+    }
+    .img-appa {
+        width: 90%;
+        height: 45vh;
+        top: 255px;
+    }
+  }
+  
+  
+  @media screen and (max-width: 414px){
+    .title-foot p{
+        font-size: 15px;
+    }
+    .certifi {
+        width: 65%;
+    }
+    .drop-plus img {
+        width: 36%;
+    }
+    .dropDrop {
+        width: 50%;
+    }
+    .navbar-image {
+        width: 50%;
+       
+    }
+    .adress-foot,.mention{
+        width: 75%;
+    }
+    .localisation {
+        width: 95%;
+        height: 100%;
+    }
+    .img-appa {
+        width: 90%;
+        height: 40vh;
+        top: 255px;
+    }
+  
+   
+  }
+  
+  
+  @media screen and (max-width: 376px){
+    .img-appa {
+        width: 90%;
+        height: 38vh;
+        top: 305px;
+    }
+  }

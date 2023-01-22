@@ -1,0 +1,459 @@
+body{
+    overflow: hidden;
+}
+ 
+
+/* ------Titre----- */
+.titre{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../image/histoire2.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titre-container{
+    background-color: rgba(239,216,7,0.8);
+    Width: 50%;
+    height: 16%;
+    border-radius: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 0.6s ease-in-out;
+    opacity: 0.6s ease-in-out;
+}
+.titre p{
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+
+    
+}
+/* -----story------ */
+.story{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.text,.drapeau{
+    width: 40%;
+    height: 100%;
+}
+.drapeau{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 0.6s ease-in-out;
+    opacity: 0.6s ease-in-out;
+}
+.img-drapeau{
+    width: 75%;
+    height: 75%;
+}
+.img-drapeau img{
+width: 100%;
+height: 100%;
+
+}
+.title-story{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title-story p {
+    font-size: 30px;
+    font-weight: bold;
+    color: #262B50;
+}
+.contenu-story{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenu-story p {
+    font-size: 20px;
+    color: #262B50;
+}
+.contenu-story span {
+    font-weight: bold;
+    color: #262B50;
+}
+/* ---Partenaire-- */
+.partenaire{
+    width: 100%;
+    height: 100vh;
+    border: 1px solid black;
+    background-image: url(../image/story2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.titre-part{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titre-part p {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+.photo{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.caroussel{
+    width: 30%;
+    height: 80%;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 0.6s ease-in-out;
+    opacity: 0.6s ease-in-out;
+}
+.slideshow-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    /* display: none; */
+    /* transition: opacity 1s ease-in-out;
+    opacity: 0;
+    border-radius: 15px; */
+}
+
+
+@media screen and (max-width: 1522px){
+    .item{
+        font-size: 12px;
+    }
+    .dropdown button {
+        font-size: 12px;
+    }
+    .titre-container {
+        Width: 65%;
+    }
+    .contenu-story p {
+        font-size: 17px;
+    }
+  }
+  
+  
+  
+  @media screen and (max-width: 1358px){
+    footer{
+        height: 110vh;
+    }
+    .b{
+        font-size: 12px;
+    }
+    .a{
+        height: 45%;
+    }
+    .element {
+        width: 75%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .adresse-foot,.num-foot,.mail-foot{
+        display: flex;
+    justify-content: center;
+    }
+    .num-foot p{
+        display: flex;
+    flex-direction: column;
+    }
+    .num-foot span{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .mail-foot p{
+        display: flex;
+    flex-direction: column;
+    }
+    .mail-foot span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .caroussel {
+        width: 45%;
+    }
+     .drapeau {
+        width: 45%;
+     }
+  
+  }
+  
+  
+  @media screen and (max-width: 1358px) {
+    .item{
+        display: none;
+    }
+    .dropdown2{
+        display: flex;
+        flex-direction: column;
+        position :absolute;
+        
+  }
+  .navbar
+  {
+    position: relative;
+    position: fixed;
+  }
+  .drop-plus{
+    display: block;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+  }
+  .navbar-items{
+    width: 0%;
+  }
+  .drop-plus img{
+    width: 35%;
+  }
+  .navbar-image{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .navbar-image img{
+    width: 25%;
+    border-radius: 0 0 0 15px;
+  }
+  .dropDrop{
+    display: block;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  }
+  
+  
+  @media screen and (max-width: 1042px){
+    .titre p {
+        font-size: 40px;
+    }
+    .story {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+    
+    
+    
+  @media screen and (max-width: 1032px){
+      .adress-foot,.mention {
+        width: 50%;
+      }
+      .logo-elem {
+        width: 85%;
+        height: 60%;
+    }
+  
+  
+   
+  
+  @media screen and (max-width: 870px){
+   /*  .navbar-image {
+        width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    }
+    .navbar-image img {
+        width: 60%;
+        border-radius: 0 0 0 15px;
+    } */
+    .caroussel {
+        width: 70%;
+    }
+    .titre p {
+        font-size: 35px;
+    }
+  }
+  
+  @media screen and (max-width: 784px){
+    
+    
+    .btn-top{
+        font-size: 27px;
+        width: 65px;
+        height: 65px;
+    }
+    
+    
+  }
+  
+  
+  @media screen and (max-width: 700px){
+    .titre p {
+        font-size: 30px;
+    }
+    .img-drapeau {
+        width: 100%;
+        height: 75%;
+    }
+  }
+ 
+  @media screen and (max-width:600px){
+    .contenu-story p {
+        font-size: 19px;
+    }
+    .drapeau {
+        width: 55%;
+    }
+    .titre-container {
+        Width: 85%;
+    }
+    .caroussel{
+        height: 70%;
+    }
+  }
+  
+  @media screen and (max-width: 504px){
+     
+      .logo-foot{
+          width: 50%;
+      }
+      .logo-elem {
+          width: 100%;
+          height: 60%;
+      }
+      .title-foot p{
+          font-size: 17px;
+      }
+      .elem1 p{
+          font-size: 12px;
+      }
+      .btn1,.btn2,.btn3{
+          width: 25%;
+      }
+     
+  }
+  
+  @media screen and (max-width: 486px){
+    .drop-plus {
+        display: block;
+        width: 100%;
+        height: 90%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .dropDrop {
+        
+        width: 50%;
+        
+    }
+    .navbar-image img {
+        width: 47%;
+    }
+    .logo-foot{
+        width: 50%;
+    }
+    .logo-elem {
+        width: 100%;
+        height: 60%;
+    }
+    .title-foot p{
+        font-size: 17px;
+    }
+    .text {
+        width: 60%;
+    }
+    .drapeau {
+        width: 70%;
+    }
+    .titre-container {
+        height: 12%;
+    }
+    .titre p {
+        font-size: 25px;
+    }
+    .titre-part p {
+        font-size: 25px;
+    }
+    .caroussel {
+        width: 80%;
+        height: 60%;
+    }
+  }
+  
+  
+  @media screen and (max-width: 414px){
+    .title-foot p{
+        font-size: 15px;
+    }
+    .certifi {
+        width: 65%;
+    }
+    .drop-plus img {
+        width: 36%;
+    }
+    .dropDrop {
+        width: 50%;
+    }
+    .navbar-image {
+        width: 50%;
+       
+    }
+    .adress-foot,.mention{
+        width: 75%;
+    }
+    .titre-container{
+        border-radius: 0;
+    }
+}
+  }
+  @media screen and (max-width: 376px){
+    .titre-container {
+        width: 98%!important;
+    }
+    .drapeau {
+        width: 85%;
+    }
+    .titre-part p {
+        font-size: 22px;
+    }
+    .caroussel {
+        width: 95%;
+        height: 50%;
+    }
+  }
+  
+  
+ 

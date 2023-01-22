@@ -1,0 +1,491 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif!important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+html,body{
+    width:100%;
+    overflow-x:hidden;
+    }
+*{
+    margin: 0;
+    padding: 0;
+}
+::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    width: 100%;
+    height: 14vh;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color:#262B50;
+    color : white;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    transition: 0.8s;
+    z-index: 999;
+}
+.navbar-image{
+    width: 16%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.navbar img{
+    width: 56%;
+    height: 100%;
+    cursor: pointer;
+}
+.navbar-items{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.anim-nav{
+    background-color: rgb(128,128,128,0.5)
+}
+.item{
+    width: 14%;
+    height: 90%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: none;
+
+}
+.item:hover{
+    text-transform: lowercase;
+    border-bottom: 1px solid orange;
+    transition: 0.5s;
+    margin: none!important;
+    position: relative;
+
+}
+.item a{
+    text-decoration: none;
+    color : white; 
+    }
+.item p:hover{
+    color: #ffd229;
+}
+/* -------------Dropdown---------------- */
+.dropbtn {
+    background-color: #262B50;
+    color: white;
+    padding: 0;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    background-color: #ffd229;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+      background-color: rgba(255,0,0,0.5);
+}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropbtn:hover {
+color: #ffd229;
+  }
+
+/* ----drop2 */
+
+  .dropdown2{
+    max-width: 186px;
+    margin: 100px auto;
+    background-color: #262B50;
+    overflow: hidden;
+    display: none;
+    position: absolute;
+    margin: auto;
+}
+.dropdown2 img{
+   width: 10%;
+   height: 10%;
+}
+
+.btnTop{
+    padding: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #262B50;
+    cursor: pointer;
+    display: flex;
+   justify-content: center;
+
+}
+.bloc-links{
+    padding: 0 20px;
+    transition: height 0.2s ease-in-out;
+    height: 0;
+   
+}
+.bloc-links li{
+   list-style: none;
+   padding: 5px 0;
+}
+.bloc-links li a{
+  font-size: 15px;
+  color: white;
+  margin-left: 5px;
+  text-decoration: none;
+}
+.bloc-links li:last-child{
+   padding-bottom: 25px;
+}
+.drop-plus{
+   display: none;
+   
+}
+.dropDrop{
+   display: none;
+}
+
+@media screen and (max-width: 1522px){
+    .item{
+        font-size: 12px;
+    }
+    .dropdown button {
+        font-size: 12px;
+    }
+    .titre-container {
+        Width: 65%;
+    }
+    .contenu-story p {
+        font-size: 17px;
+    }
+  }
+  
+  
+  
+  @media screen and (max-width: 1358px){
+    footer{
+        height: 110vh;
+    }
+    .b{
+        font-size: 12px;
+    }
+    .a{
+        height: 45%;
+    }
+    .element {
+        width: 75%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .adresse-foot,.num-foot,.mail-foot{
+        display: flex;
+    justify-content: center;
+    }
+    .num-foot p{
+        display: flex;
+    flex-direction: column;
+    }
+    .num-foot span{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .mail-foot p{
+        display: flex;
+    flex-direction: column;
+    }
+    .mail-foot span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .caroussel {
+        width: 45%;
+    }
+     .drapeau {
+        width: 45%;
+     }
+  
+  }
+  
+  
+  @media screen and (max-width: 1358px) {
+    .item{
+        display: none;
+    }
+    .dropdown2{
+        display: flex;
+        flex-direction: column;
+        position :absolute;
+        
+  }
+  .navbar
+  {
+    position: relative;
+    position: fixed;
+  }
+  .drop-plus{
+    display: block;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+  }
+  .navbar-items{
+    width: 0%;
+  }
+  .drop-plus img{
+    width: 35%;
+  }
+  .navbar-image{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .navbar-image img{
+    width: 25%;
+  }
+  .dropDrop{
+    display: block;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  }
+  
+  
+  @media screen and (max-width: 1042px){
+    .titre p {
+        font-size: 40px;
+    }
+    .story {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+    
+    
+    
+  @media screen and (max-width: 1032px){
+      .adress-foot,.mention {
+        width: 50%;
+      }
+      .logo-elem {
+        width: 85%;
+        height: 60%;
+    }
+  
+  
+   
+  
+  @media screen and (max-width: 870px){
+   /*  .navbar-image {
+        width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    }
+    .navbar-image img {
+        width: 60%;
+        border-radius: 0 0 0 15px;
+    } */
+    .caroussel {
+        width: 70%;
+    }
+    .titre p {
+        font-size: 35px;
+    }
+  }
+  
+  @media screen and (max-width: 784px){
+    
+    
+    .btn-top{
+        font-size: 27px;
+        width: 65px;
+        height: 65px;
+    }
+    
+    
+  }
+  
+  
+  @media screen and (max-width: 700px){
+    .titre p {
+        font-size: 30px;
+    }
+    .img-drapeau {
+        width: 100%;
+        height: 75%;
+    }
+  }
+ 
+  @media screen and (max-width:600px){
+    .contenu-story p {
+        font-size: 19px;
+    }
+    .drapeau {
+        width: 55%;
+    }
+    .titre-container {
+        Width: 85%;
+    }
+    .caroussel{
+        height: 70%;
+    }
+  }
+  
+  @media screen and (max-width: 504px){
+     
+      .logo-foot{
+          width: 50%;
+      }
+      .logo-elem {
+          width: 100%;
+          height: 60%;
+      }
+      .title-foot p{
+          font-size: 17px;
+      }
+      .elem1 p{
+          font-size: 12px;
+      }
+      .btn1,.btn2,.btn3{
+          width: 25%;
+      }
+     
+  }
+  
+  @media screen and (max-width: 486px){
+    .drop-plus {
+        display: block;
+        width: 100%;
+        height: 90%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .dropDrop {
+        
+        width: 50%;
+        
+    }
+    .navbar-image img {
+        width: 47%;
+    }
+    .logo-foot{
+        width: 50%;
+    }
+    .logo-elem {
+        width: 100%;
+        height: 60%;
+    }
+    .title-foot p{
+        font-size: 17px;
+    }
+    .text {
+        width: 60%;
+    }
+    .drapeau {
+        width: 70%;
+    }
+    .titre-container {
+        height: 12%;
+    }
+    .titre p {
+        font-size: 25px;
+    }
+    .titre-part p {
+        font-size: 25px;
+    }
+    .caroussel {
+        width: 80%;
+        height: 60%;
+    }
+  }
+  
+  
+  @media screen and (max-width: 414px){
+    .title-foot p{
+        font-size: 15px;
+    }
+    .certifi {
+        width: 65%;
+    }
+    .drop-plus img {
+        width: 36%;
+    }
+    .dropDrop {
+        width: 50%;
+    }
+    .navbar-image {
+        width: 50%;
+       
+    }
+    .adress-foot,.mention{
+        width: 75%;
+    }
+}
+  }
+  @media screen and (max-width: 376px){
+    .titre-container {
+        Width: 90%;
+    }
+    .drapeau {
+        width: 85%;
+    }
+    .titre-part p {
+        font-size: 22px;
+    }
+    .caroussel {
+        width: 95%;
+        height: 50%;
+    }
+  }
+  
+  
+ 

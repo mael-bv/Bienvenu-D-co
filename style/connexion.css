@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #262B50;
+}
+html,body{
+    width:100%;
+    overflow-x:hidden;
+    }
+*{
+    margin: 0;
+    padding: 0;
+}
+::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------Contenu----- */
+
+.contenu{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    width: 50%;
+    height: 50%;
+    border: 1px solid white;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.titre{
+    width: 100%;
+    height: 10%;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.information {
+    width: 100%;
+    height: 80%;
+}
+.adresse,.mdp1,.valid{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+input{
+    width: 35%;
+    height: 20%;
+}
+label{
+    font-size: 25px;
+    font-weight: bold;
+}
+button{
+    width: 20%;
+    height: 30%;
+    font-size: 20px;
+}
+.erreur {
+    width: 100%;
+    height: 10%;
+    color: red;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.retour{
+    width: 10%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffd229;
+    position: absolute;
+    left: 0;
+    border-radius: 0 15px 15px 0;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.retour a {
+    text-decoration: none;
+    color: white;
+}
+.retour a:hover{
+    color: black;
+}
+.retour span{
+    color: black;
+}
+.baniere{
+    width: 20%;
+    height: 15vh;
+    background-image: url(../image/baniere3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@media screen and (max-width: 970px){
+
+    .retour a {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 790px){
+    .retour {
+        width: 15%;
+    }
+    form {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .retour {
+        width: 25%;
+    }
+    form {
+        width: 95%;
+    }
+    input{
+        width: 70%;
+    }
+}

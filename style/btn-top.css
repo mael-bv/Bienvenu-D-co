@@ -1,0 +1,22 @@
+.btn-top{
+    height: 100px;
+    width: 100px;
+    background-color: crimson;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    z-index: 999;
+}
+@media screen and (max-width: 784px){
+    .btn-top{
+        font-size: 27px;
+        width: 65px;
+        height: 65px;
+    }
+  }
+  
